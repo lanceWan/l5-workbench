@@ -17,6 +17,5 @@
         "psr-4": {
             "Iwanli\\Workbench\\": "src/"
         }
-    },
-    "minimum-stability": "stable"
+    }
 }
