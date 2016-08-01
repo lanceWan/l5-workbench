@@ -1,0 +1,22 @@
+{
+    "name": "iwanli/workbench",
+    "description": "workbench for Laravel 5 .",
+    "keywords": ["laravel5","workbench","l5"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Iwanli",
+            "email": "709344897@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "5.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Iwanli\\Workbench\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}

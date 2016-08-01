@@ -1,0 +1,20 @@
+{
+    "name": "{{lower_vendor}}/{{lower_name}}",
+    "description": "",
+    "authors": [
+        {
+            "name": "{{author}}",
+            "email": "{{email}}"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "5.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "{{vendor}}\\{{name}}\\": "src/{{vendor}}/{{name}}"
+        }
+    },
+    "minimum-stability": "stable"
+}
