@@ -118,7 +118,7 @@ class PackageCreator
      */
     protected function writePhpUnitFile(Package $package, $directory)
     {
-        $stub = __DIR__.'../templates/phpunit.xml';
+        $stub = __DIR__.'/../templates/phpunit.xml';
 
         $this->files->copy($stub, $directory.'/phpunit.xml');
     }
@@ -131,7 +131,7 @@ class PackageCreator
      */
     protected function writeTravisFile(Package $package, $directory)
     {
-        $stub = __DIR__.'../templates/.travis.yml';
+        $stub = __DIR__.'/../templates/.travis.yml';
 
         $this->files->copy($stub, $directory.'/.travis.yml');
     }
@@ -162,10 +162,10 @@ class PackageCreator
     protected function getComposerStub($plain)
     {
         if ($plain) {
-            return $this->files->get(__DIR__.'../templates/plain.composer.json');
+            return $this->files->get(__DIR__.'/../templates/plain.composer.json');
         }
 
-        return $this->files->get(__DIR__.'../templates/composer.json');
+        return $this->files->get(__DIR__.'/../templates/composer.json');
     }
 
     /**
@@ -177,7 +177,7 @@ class PackageCreator
      */
     public function writeIgnoreFile(Package $package, $directory, $plain)
     {
-        $this->files->copy(__DIR__.'../templates/gitignore.txt', $directory.'/.gitignore');
+        $this->files->copy(__DIR__.'/../templates/gitignore.txt', $directory.'/.gitignore');
     }
 
     /**
@@ -302,10 +302,10 @@ class PackageCreator
     protected function getProviderFile($plain)
     {
         if ($plain) {
-            return $this->files->get(__DIR__.'../templates/plain.provider.stub');
+            return $this->files->get(__DIR__.'/../templates/plain.provider.stub');
         }
 
-        return $this->files->get(__DIR__.'../templates/provider.stub');
+        return $this->files->get(__DIR__.'/../templates/provider.stub');
     }
 
     /**

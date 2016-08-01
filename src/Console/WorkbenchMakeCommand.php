@@ -4,7 +4,7 @@ namespace Iwanli\Workbench\Console;
 
 use Illuminate\Console\Command;
 use Iwanli\Workbench\Packages\Package;
-use Pingpong\Workbench\Packages\PackageCreator;
+use Iwanli\Workbench\Packages\PackageCreator;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 
@@ -66,7 +66,7 @@ class WorkbenchMakeCommand extends Command
     {
         $config = $this->laravel['config']['workbench'];
 
-        $path = $this->laravel['path.base'].DIRECTORY_SEPARATOR.$config('root_dir');
+        $path = $this->laravel['path.base'].DIRECTORY_SEPARATOR.$config['root_dir'];
 
         $plain = !$this->option('resources');
 

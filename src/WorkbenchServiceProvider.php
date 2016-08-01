@@ -1,9 +1,8 @@
 <?php
-
 namespace Iwanli\Workbench;
-
 use Illuminate\Support\ServiceProvider;
-
+use Iwanli\Workbench\Console\WorkbenchMakeCommand;
+use Iwanli\Workbench\Packages\PackageCreator;
 class WorkbenchServiceProvider extends ServiceProvider
 {
 	/**
@@ -23,7 +22,7 @@ class WorkbenchServiceProvider extends ServiceProvider
 		$path = config_path('workbench.php');
 
         $this->publishes([
-            __DIR__.'config/config.php' => $path,
+            __DIR__.'/config/config.php' => $path,
         ], 'config');
 
         if (file_exists($path)) {

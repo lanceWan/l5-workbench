@@ -27,9 +27,14 @@ return [
     */
 
     'email' => '',
-
+    /**
+     * basic root directory name
+     */
     'root_dir' => 'packages',
 
+    /**
+     * create directory in src 
+     */
     'support_directory' => [
         'config', 
         'resources/lang', 
