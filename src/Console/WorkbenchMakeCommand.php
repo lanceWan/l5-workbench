@@ -113,6 +113,9 @@ class WorkbenchMakeCommand extends Command
     protected function getPackageSegments()
     {
         $package = $this->argument('package');
+        if (count(explode('/', $package, 2)) == 2 ) {
+            return array_map('studly_case', explode('/', $package, 2));
+        }
 
         return array_map('studly_case', explode(DIRECTORY_SEPARATOR, $package, 2));
     }
